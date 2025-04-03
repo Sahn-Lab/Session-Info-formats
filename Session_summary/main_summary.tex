@@ -1,0 +1,42 @@
+\documentclass[a4paper,12pt]{article}
+
+% Custom command for title
+\newcommand{\titlepacket}[1]{
+    \title{#1}
+}
+
+% Package imports
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+\begin{document}
+
+% Title
+\titlepacket{Title}
+\author{Author}
+\maketitle
+
+\section{Introduction}
+Provide a brief introduction, including the context and objectives of the session.
+
+\section{What We Did}
+Summarize the activities and methods used during the session.
+You may use an itemized list:
+\begin{itemize}
+    \item If you want to use a hyperlink, use \href{giveyourlink}{\uline{this}}
+    \item If you want to use a codeblock, use it like this:
+\end{itemize}
+       \begin{verbatim}
+         Give the command for the code block
+       \end{verbatim}
+
+\section{Summary of Discussion Minutes}
+Detail the key points, questions raised, and insights gathered from the discussions.
+
+\section{Conclusions}
+Summarize the main takeaways, findings, and possible next steps.
+
+\end{document}
