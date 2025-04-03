@@ -1,0 +1,47 @@
+\documentclass[a4paper,12pt]{article}
+
+% Custom command for title
+\newcommand{\titlepacket}[1]{
+    \title{#1}
+}
+
+% Package imports
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{listings}
+
+\begin{document}
+
+% Title
+\titlepacket{Title}
+\author{Author}
+\maketitle
+
+\section{What is the Method?}
+
+Describe the method here. Provide a brief introduction, its significance, and any relevant background information.
+
+\section{Pre-requisites}
+List the necessary background knowledge or required software/tools for this session. You may use an itemized list:
+\begin{itemize}
+    \item If you want to use a hyperlink, use \href{giveyourlink}{\uline{this}}
+    \item If you want to use a codeblock, use it like this:
+\end{itemize}
+       \begin{verbatim}
+         Give the command for the code block
+       \end{verbatim}
+
+
+
+\section{What We'll Do Over the Session}
+Outline the key activities and objectives of the session:
+\begin{enumerate}
+    \item Step 1
+    \item Step 2
+    \item Step 3
+\end{enumerate}
+\end{document}
